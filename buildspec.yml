@@ -6,7 +6,7 @@ phases:
     commands:
       - aws --version
       - echo Logging in to Amozon ECR
-      - aws ecr get-login-password --region ap-northeast-2 | docker login --username AWS --password-stdin 872144589073.dkr.ecr.us-east-1.amazonaws.com
+      - aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 872144589073.dkr.ecr.us-east-1.amazonaws.com
 
   pre_build:
     commands:
